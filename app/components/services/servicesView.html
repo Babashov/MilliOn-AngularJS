@@ -1,0 +1,22 @@
+<div class="menuContainer">
+    <div class="navbar-links">
+                    <a href="#home">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <a href="#login">Services</a>
+    </div>
+
+    <div class="servicesList" ng-init="fetchData()">
+                <ul>
+                    <li ng-repeat="service in servicesResData.data.services">
+                        <a href="#mobile">
+                            <img src="{{service.icon}}" alt="{{service.display_name_az}}">
+                            <span>{{service.display_name_az}}</span>
+                        </a>
+                    </li>
+
+                </ul>
+    </div>
+
+            
+
+</div>

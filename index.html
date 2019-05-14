@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html ng-app="MilliOnApp" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>MilliOn</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="fullContainer">
+            <div class="fulHeader" ng-controller="StaticHeader">
+            <div class="logo">
+                            <img src="assets/img/logo2.png" alt="MilliOn" class="logoHeader">
+                        </div>
+                        <div class="rightSide">
+                            <ul class="rightMenuIcons">
+                                <li>
+                                    <a href="#search">
+                                        <i class="fas fa-search"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#phone">
+                                        <i class="fas fa-phone"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                        <select class="languageSelect">
+                                            <option value="Azerbaijan">AZ</option>
+                                            <option value="English">EN</option>
+                                            <option value="Russian">RU</option>
+                                        </select>
+                                </li>
+                                <li>
+                                    <a href="#" style="cursor: pointer;" ng-click="logout()">
+                                            <i class="fas fa-sign-in-alt"></i>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a style="display:block;text-decoration:none;color:white;margin-top:10px;margin-left:10px;margin-right:10px;" href="#!/favorites">Profile</a>
+                                </li>
+
+                                <li>
+                                    <a href="#navbar">
+                                        <i class="fas fa-bars"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>   
+            </div>
+
+
+    </div>
+
+
+    <div ng-view></div>
+
+    <div class="footer">
+
+        <div class="footerMenuList">
+            <ul>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#about">Şirkət haqqında</a></li>
+                <li><a href="#mission">Missiyamız</a></li>
+                <li><a href="#vision">Uzunmüddətli məqsədlərimiz</a></li>
+                <li><span>All rights reserved 2019 &copy; MilliÖn</span></li>
+            </ul>
+            <ul>
+                <li><a href="#support">Support</a></li>
+                <li><a href="#faq">F.A.Q</a></li>
+                <li><a href="#details">Bizim üstünlüklərimiz</a></li>
+                <li><a href="#feedback">Sayt vasitəsilə müraciət</a></li>
+                <li><a href="#propofus">Bizlə işləməyin üstünlüyü</a></li>
+            </ul>
+            <ul>
+                <li><a href="#request">Request</a></li>
+                <li><a href="#offer">Offer</a></li>
+                <li><a href="#interg">Integration</a></li>
+                <li><a href="#complaint">Complaint</a></li>
+            </ul>
+            <ul>
+                <li><a href="#career">Career</a></li>
+                <li><a href="#vacancies">Vacancies</a></li>
+                <li><a href="#internprograms">Internship programs</a></li>
+            </ul>
+            <ul>
+                <li><a href="#additional">Additional</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#promotions">Promotions</a></li>
+                <li><a href="#bonuses">Bonuses</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="app/lib/angular.min.js"></script>
+<script src="app/lib/angular-route.min.js"></script>
+<script src="app/app.module.js"></script>
+<script src="app/app.routes.js"></script>
+<script src="app/components/login/loginController.js"></script>
+<script src="app/components/services/servicesController.js"></script>
+<script src="app/components/favorites/favoritesController.js"></script>
+<script src="app/components/static/HeaderController.js"></script>
+
+</body>
+</html>

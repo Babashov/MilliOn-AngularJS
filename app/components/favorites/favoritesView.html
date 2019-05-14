@@ -1,0 +1,156 @@
+<div class="menuContainer">
+
+            <div class="favoritesList">
+                <div class="leftSide">
+                    <div class="profileInfo">
+                        <span class="profileName">{{profileData.first_name}} {{profileData.last_name}}</span>
+                        <span class="notifyData">
+                            <i class="far fa-bell"></i> 
+                            <span class="notifications">{{profileData.notifications_count}}</span>
+                        </span>
+                        <span class="userBonus">{{profileData.bonus}} bonus</span>
+                    </div>
+
+                    <div class="menuNavbar">
+                        <ul>
+                            <li>
+                                <div class="selectedMenuLeft"></div>
+                                <a class="selected" href="#home">Ana səhifə</a>
+                            </li>
+                            <li><a href="#payment">Birbaşa ödə</a></li>
+                            <li><a href="">Kartlar</a></li>
+                            <li><a href="">Ödənişlər</a></li>
+                            <li><a href="">Bonuslar</a></li>
+                            <li><a href="">Favoritlər</a></li>
+                            <li><a href="">Profil</a></li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="menuRightSide">
+                    <h2>Favoritlər</h2>
+                    <div class="rightPayments" ng-init="favoritesFetch()">
+                        <ul>
+                            <li ng-repeat="service in favoritesData.data.templates">
+                                <img src="{{service.icon}}" />
+                                <span>{{service.template_name}}</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="rightTablePayments">
+                        <div class="lastPayment">
+                            <h3>Son ödənişlər</h3>
+                            <span class="rightOptions"></span>
+                            <table id="tablePayments">
+                                <tr>
+                                    <th>Ad</th>
+                                    <th>Kod</th>
+                                    <th>Tarix</th>
+                                    <th>Məbləğ</th>
+                                    <th>TransactionID</th>
+                                </tr>
+
+                                <tr>
+                                    <td>Cinema</td>
+                                    <td>7818</td>
+                                    <td>08.04.2016</td>
+                                    <td>18 AZN</td>
+                                    <td>214156589</td>
+                                    <td><button>Ödə</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Azercell</td>
+                                    <td>0506783211</td>
+                                    <td>08.04.2016</td>
+                                    <td>5 AZN</td>
+                                    <td>9122342300</td>
+                                    <td><button>Ödə</button></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Unibank</td>
+                                    <td>4567</td>
+                                    <td>08.04.2016</td>
+                                    <td>230 AZN</td>
+                                    <td>487621148</td>
+                                    <td><button>Ödə</button></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Cinema</td>
+                                    <td>7818</td>
+                                    <td>08.04.2016</td>
+                                    <td>18 AZN</td>
+                                    <td>214156589</td>
+                                    <td><button>Ödə</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Azercell</td>
+                                    <td>0506783211</td>
+                                    <td>08.04.2016</td>
+                                    <td>5 AZN</td>
+                                    <td>9122342300</td>
+                                    <td><button>Ödə</button></td>
+                                </tr>
+    
+                                <tr>
+                                    <td>Unibank</td>
+                                    <td>4567</td>
+                                    <td>08.04.2016</td>
+                                    <td>230 AZN</td>
+                                    <td>487621148</td>
+                                    <td><button>Ödə</button></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Cinema</td>
+                                    <td>7818</td>
+                                    <td>08.04.2016</td>
+                                    <td>18 AZN</td>
+                                    <td>214156589</td>
+                                    <td><button>Ödə</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Azercell</td>
+                                    <td>0506783211</td>
+                                    <td>08.04.2016</td>
+                                    <td>5 AZN</td>
+                                    <td>9122342300</td>
+                                    <td><button>Ödə</button></td>
+                                </tr>
+    
+                                <tr>
+                                    <td>Unibank</td>
+                                    <td>4567</td>
+                                    <td>08.04.2016</td>
+                                    <td>230 AZN</td>
+                                    <td>487621148</td>
+                                    <td><button>Ödə</button></td>
+                                </tr>
+
+
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            
+        <div class="bannerList">
+                <div class="banner">
+                    <img src="assets/img/banner1.jpg" alt="Banner1">
+                </div>
+    
+                <div class="banner">
+                    <img src="assets/img/banner2.jpg" alt="Banner2">
+                </div>
+    
+                <div class="banner">
+                    <img src="assets/img/banner3.jpg" alt="Banner3">
+                </div>
+    
+    
+            </div>
+</div>
